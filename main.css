@@ -1,0 +1,169 @@
+/* ==UserStyle==
+@name           Symphony Dark
+@namespace      github.com/Tatertot5s/symphony-labs-dark/
+@version        1.0.0
+@description    Save your eyes while getting E!
+@author         Indy
+==/UserStyle== */
+@-moz-document url-prefix("https://symphonylabs.cc/") {
+    :root {
+        /*Text Colors*/
+        --title-color: white;
+        --text-color: white;
+        
+        /*Style Colors*/
+        --bg-color: black;
+        --bg-color-highlights: #080808;
+        --bg-outline: #252525;
+        --color-gray-300: #252525;
+        --notice-color: #191919;
+
+        --border-color: #191919;
+        --color-border-dark: #3d3d3d;
+
+        /*Review Colors*/
+        --verified-color: #005608;
+        --verified-text-color: #00be0b;
+        --star-on: #fff;
+        --star-off: #343434;
+
+        /*Button Colors*/
+        --top-button-color: #191919;
+        --color-gray-900: #424245;
+        
+        --color-primary: #121212;
+        --color-primary-light: #1f1f1f;
+        
+        --button-color: #101010;
+        --color-surface: #191919;
+    }
+
+    /*Logo*/
+    .w-14 {
+        filter: invert()
+    }
+
+    /*Sitewide Notice*/
+    .py-3 {
+        background-color: var(--notice-color) !important;
+    }
+
+    /*Product Cards*/
+    .card-brutalist {
+        border-color: var(--border-color);
+        background: var(--bg-color);
+        color: var(--text-color);
+    }
+
+
+    /*Styles*/
+    /*Background*/
+    .bg-\[\#f5f0ee\] {
+        background-color: var(--bg-color)
+    }
+
+    /* Boarders */
+    .brutalist-border,
+    .border-gray-100 {
+        border-color: var(--border-color)
+    }
+
+    /*Text*/
+    /*Titles*/
+    .text-3xl,
+    .text-lg,
+    .text-2xl,
+    .font-bold,
+    .text-xs,
+    .text-xl,
+    .items-center {
+        color: var(--title-color)
+    }
+
+
+    /*Normal*/
+    .text-base,
+    .text-sm {
+        color: var(--text-color);
+    }
+
+
+    /*Hyperlinks*/
+    a {
+        color: var(--text-color)
+    }
+    a:hover {
+        font-weight: bold
+    }
+
+
+    /*Reviews*/
+    /*Verified Review*/
+    .inline-flex {
+        background-color: var(--verified-color);
+        color: var(--verified-text-color);
+        border-radius: 4px;
+        border-color: #0000;
+    }
+    
+    /*Review Stars*/
+    .text-xl {
+        --color-gray-900: var(--star-on);
+        --color-gray-300: var(--star-off)
+    }
+
+
+    /*Inputs*/
+    /*Buttons*/
+    .btn-brutalist {
+        background: var(--button-color);
+        color: var(--text-color);
+        border-color: var(--border-color);
+    }
+
+    /*Top Buttons*/
+    .rounded-md {
+        background-color: var(--top-button-color) !important;
+    }
+
+    /*Text Input*/
+    .input-brutalist {
+        background: var(--background-color);
+        color: var(--text-color);
+        border-color: var(--border-color);
+    }
+
+    /*US/UK*/
+    .border-gray-200 {
+        background-color: var(--bg-color);
+        border-color: var(--border-color)
+    }
+
+    /*Payment Buttons*/
+    .border {
+        border-width: 1px;
+        background-color: var(--top-button-color) !important;
+        border-radius: 10px;
+        border-color: var(--color-border-dark);
+    }
+
+    /*Errors*/
+    .border-gray-300 {
+        border-color: var(--border-color)
+    }
+        
+    .bg-yellow-50 {
+        background-color: #523a0e;
+    }
+    .bg-red-50 {
+        background-color: red
+    }
+
+    /*Header & Footer*/
+    .border-b,
+    .py-6,
+    .mt-auto {
+        background: var(--bg-color-highlights);
+        border-color: var(--bg-outline);
+    }
+}
